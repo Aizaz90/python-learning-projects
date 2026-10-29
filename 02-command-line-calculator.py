@@ -1,6 +1,7 @@
 import sys 
 if len(sys.argv) !=4:
     print("Usage: python3 02-command-line-calculator.py <number1> <operator> <number2>")
+    sys.exit(1)
 
 print(sys.argv)
 
