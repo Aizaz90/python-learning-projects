@@ -89,6 +89,32 @@ python3 02-command-line-calculator.py 10 / 5
 
 ---
 
+### 03 — Security Log Analyzer
+
+**Status:** Completed
+
+A beginner-friendly Python tool that analyzes synthetic authentication logs and flags IP addresses with repeated failed login attempts.
+
+**Features:**
+- Reads authentication logs from a text file
+- Counts successful and failed logins
+- Extracts source IP addresses
+- Counts failed login attempts per IP using dictionaries
+- Flags IP addresses with 3 or more failed login attempts
+- Displays a security summary and total suspicious IP count
+
+**Concepts practiced:** File handling, `with open()`, `.readlines()`, loops, string methods, `.split()`, dictionaries, and conditional statements.
+
+**Run:**
+
+```bash
+cd 03-security-log-analyzer
+python3 analyzer.py
+```
+
+**Note:** Uses synthetic training logs. The threshold is for demonstration, not definitive detection of malicious activity.
+
+
 ### TCP Port Scanner
 
 **Status:** Work in Progress
