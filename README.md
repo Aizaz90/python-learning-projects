@@ -115,6 +115,30 @@ python3 analyzer.py
 **Note:** Uses synthetic training logs. The threshold is for demonstration, not definitive detection of malicious activity.
 
 
+### 04 — Hostname-to-IP Resolver
+
+**Status:** Completed
+
+A Python command-line tool that resolves hostnames into IPv4 addresses using the `socket` module.
+
+**Features:**
+- Resolves hostnames using `socket.gethostbyname()`
+- Accepts hostnames through `sys.argv`
+- Validates missing or extra command-line arguments
+- Handles DNS resolution errors using `socket.gaierror`
+- Displays the resolved IPv4 address
+
+**Concepts practiced:** DNS, socket module, command-line arguments, exception handling, and exit codes.
+
+**Run:**
+
+```bash
+python3 04-hostname-ip-resolver/resolver.py github.com
+```
+
+**Note:** The resolved IP address may vary depending on DNS responses.
+
+
 ### TCP Port Scanner
 
 **Status:** Work in Progress
